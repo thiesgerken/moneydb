@@ -1,7 +1,5 @@
 # MoneyDB
 
-![Build status](https://git.thiesgerken.de/thies/moneydb/badges/master/build.svg)
-
 Yet another tool to manage private finances.
 
 Consists of the following components:
