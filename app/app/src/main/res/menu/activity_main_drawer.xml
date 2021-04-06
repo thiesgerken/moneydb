@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_currentbalances"
+            android:checked="true"
+            android:icon="@drawable/ic_euro_symbol"
+            android:title="Aktuelle Kontostände" />
+        <item
+            android:id="@+id/nav_monthly"
+            android:icon="@drawable/ic_event_black_24px"
+            android:title="Monatliche Übersichten" />
+    </group>
+
+    <item android:title="Datenbank">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_expenses"
+                    android:icon="@drawable/ic_shopping_cart_black_24px"
+                    android:title="Ausgaben" />
+                <item
+                    android:id="@+id/nav_balances"
+                    android:icon="@drawable/ic_local_atm"
+                    android:title="Kontostände" />
+                <item
+                    android:id="@+id/nav_categories"
+                    android:icon="@drawable/ic_bookmark_border_black_24px"
+                    android:title="Kategorien" />
+                <item
+                    android:id="@+id/nav_accounts"
+                    android:icon="@drawable/ic_perm_identity_black_24px"
+                    android:title="Konten" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

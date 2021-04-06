@@ -1,0 +1,6 @@
+[Unit]
+Description=Backup MoneyDB
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /var/backups/backup-moneydb.sh

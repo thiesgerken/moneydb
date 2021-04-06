@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_database"
+        android:key="pref_database">
+    <de.thiesgerken.moneydb.util.EditTextPreference
+        android:key="pref_url"
+        android:inputType="textUri"
+        android:title="@string/pref_url"
+        />
+    <de.thiesgerken.moneydb.util.EditTextPreference
+        android:key="pref_user"
+        android:inputType="textNoSuggestions"
+        android:title="@string/pref_user"
+        />
+    <EditTextPreference
+        android:key="pref_password"
+        android:inputType="textPassword"
+        android:title="@string/pref_password"
+        />
+    </PreferenceCategory>
+</PreferenceScreen>

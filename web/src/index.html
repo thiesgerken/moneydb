@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Ausgabenverwaltung</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <div style="height: 1px;"></div>
+    <div class="ui fixed inverted menu" id="menu-main">
+      <div class="ui fluid container" style="position: absolute; left: 0;">
+        <div class="header item">Ausgabenverwaltung</div>
+        <a class="link item" data-tab="analysis"
+          ><i class="icon calculator"></i> Analyse</a
+        >
+        <a class="link item" data-tab="expenses">
+          <i class="icon cart"></i> Ausgaben
+        </a>
+        <a class="link item" data-tab="balances"
+          ><i class="icon money"></i> Kontost&auml;nde</a
+        >
+        <a class="link item" data-tab="accounts"
+          ><i class="icon payment"></i> Konten</a
+        >
+        <a class="link item" data-tab="categories"
+          ><i class="icon bookmark"></i> Kategorien</a
+        >
+        <div class="ui simple dropdown item">
+          <i class="icon cogs"></i> Automatisierung
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="#" data-tab="periodic"
+              ><i class="icon calendar alternate"></i> Regelmäßige Ausgaben</a
+            >
+            <a class="item" href="#" data-tab="automation"
+              ><i class="icon cogs"></i> Automatische Ausgaben</a
+            >
+          </div>
+        </div>
+        <!-- <div class="ui simple dropdown item">
+        <i class="icon chart line"></i> Wertpapiere <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#" data-tab="stocks"><i class="icon list"></i> Watchlist</a>
+          <a class="item" href="#" data-tab="stock-transactions"><i class="icon chart line"></i> Transaktionen</a>
+          <a class="item" href="#" data-tab="securities-accounts"><i class="icon payment"></i> Depots</a>
+        </div>
+      </div> -->
+        <div class="ui simple dropdown item">
+          <i class="icon code"></i> Sonstiges <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="link item" data-tab="devices"
+              ><i class="icon mobile alternate"></i> Ger&auml;te</a
+            >
+            <a href="/swagger-ui/" target="_blank" class="item"
+              ><i class="external icon"></i> API</a
+            >
+            <a href="#" id="link-bundler" target="_blank" class="item"
+              ><i class="chart pie icon"></i> Bundler Report</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="menu right" style="position: absolute; right: 0;">
+        <div class="item" id="label-user">
+          <!-- ... -->
+        </div>
+      </div>
+    </div>
+    <div class="ui main container fluid">
+      <div class="ui tab text" data-tab="analysis" id="page-analysis">
+        <!-- ... -->
+      </div>
+      <div class="ui tab text" data-tab="expenses" id="page-expenses">
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+      <div class="ui tab text" data-tab="categories" id="page-categories">
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+      <div class="ui tab text" data-tab="accounts" id="page-accounts">
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+      <div class="ui tab text" data-tab="balances" id="page-balances">
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+      <div class="ui tab text" data-tab="periodic" id="page-periodic">
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+      <div class="ui tab text" data-tab="automation" id="page-automation">
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+      <div class="ui tab text" data-tab="devices" id="page-devices">
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+      <div class="ui tab text" data-tab="stocks" id="page-stocks">
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+      <div
+        class="ui tab text"
+        data-tab="stock-transactions"
+        id="page-stock-transactions"
+      >
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+      <div
+        class="ui tab text"
+        data-tab="securities-accounts"
+        id="page-securities-accounts"
+      >
+        <table
+          class="ui celled selectable table mytable"
+          width="100%"
+          cellspacing="0"
+        >
+          <!-- ... -->
+        </table>
+      </div>
+    </div>
+    <div class="ui basic modal" id="modal-delete">
+      <div class="ui icon header">
+        <i class="trash icon"></i> Element l&ouml;schen?
+      </div>
+      <div class="content">
+        <p>
+          <!-- ... -->
+        </p>
+      </div>
+      <div class="actions">
+        <div class="ui basic cancel inverted button">
+          <i class="remove icon"></i> Abbrechen
+        </div>
+        <div class="ui red ok inverted button">
+          <i class="checkmark icon"></i> Löschen
+        </div>
+      </div>
+    </div>
+    <div class="ui basic small modal" id="modal-error">
+      <div class="ui icon header"><i class="attention icon"></i> Fehler</div>
+      <div class="content">
+        <!-- ... -->
+      </div>
+      <div class="actions">
+        <div class="ui basic cancel inverted button">
+          Schließen
+        </div>
+      </div>
+    </div>
+    <!-- ... -->
+  </body>
+</html>

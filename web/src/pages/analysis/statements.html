@@ -1,0 +1,54 @@
+<div class="ui grid">
+  <div class="row" style="padding-bottom:0px">
+    <div class="twelve wide column">
+      <div class="ui form">
+        <div class="fields">
+          <div class="three wide field">
+            <label>von</label>
+            <div class="ui calendar" id="date-from">
+              <div class="ui input left icon">
+                <i class="calendar icon"></i>
+                <input type="text" placeholder="Datum" name="date" />
+              </div>
+            </div>
+          </div>
+          <div class="three wide field">
+            <label>bis</label>
+            <div class="ui calendar" id="date-to">
+              <div class="ui input left icon">
+                <i class="calendar icon"></i>
+                <input type="text" placeholder="Datum" name="date" />
+              </div>
+            </div>
+          </div>
+          <div class="three wide field">
+            <label>Konto</label>
+            <div class="ui fluid selection dropdown">
+              <input id="account" type="hidden" />
+              <i class="dropdown icon"></i>
+              <div class="default text">Konto</div>
+              <div class="menu"></div>
+            </div>
+          </div>
+          <!-- <div class="five wide field">
+          <label>&nbsp;</label>
+            &nbsp;
+          </div> -->
+          <div class="three wide field">
+            <label>&nbsp;</label>
+            <a class="ui disabled labeled icon button" id="csv-export">
+              <i class="download icon"></i>
+              Export als CSV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve wide column">
+      <table class="ui celled table" id="table-statements">
+      </table>
+    </div>
+  </div>
+</div>

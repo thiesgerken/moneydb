@@ -1,0 +1,127 @@
+name: moneydb
+version: 2.1.1
+license: BSD3
+author: "Thies Gerken"
+maintainer: "thies@thiesgerken.de"
+copyright: "2015-2021 Thies Gerken"
+git: https://git.thiesgerken.de/thies/moneydb
+synopsis: Management of personal finances
+category: Web
+description: Please see README.md
+
+extra-source-files:
+  - web/dist/index.html # and others, but at least watch for changes in this one.
+  - web/dist/*
+
+dependencies:
+  - base >= 4.7 && < 5
+
+flags:
+  localwww:
+    description: Do not build ./web into the lib, instead serve from the directory at runtime. Useful for testing of web app.
+    default: False
+    manual: True
+
+ghc-options: -Wall -Wmissing-export-lists -Widentities -Wpartial-fields -Wredundant-constraints -O2 -funfolding-use-threshold=16 -optc-O3
+
+library:
+  source-dirs: lib
+  dependencies:
+    - aeson
+    - bytestring
+    - configurator
+    - containers
+    - Decimal
+    - esqueleto
+    - extra
+    - file-embed
+    - html-entities
+    - http-api-data
+    - http-client
+    - http-client-tls
+    - http-types
+    - lens
+    - monad-logger
+    - mtl
+    - persistent
+    - persistent-mysql
+    - persistent-postgresql
+    - persistent-sqlite
+    - persistent-template
+    - pwstore-fast
+    - regex-pcre
+    - regex-tdfa
+    - resource-pool
+    - resourcet
+    - safe
+    - scientific
+    - servant
+    - servant-js
+    - servant-server
+    - servant-swagger
+    - servant-swagger-ui
+    - swagger2
+    - split
+    - tagged
+    - template-haskell
+    - text
+    - time
+    - transformers
+    - unliftio-core
+    - unordered-containers
+    - utf8-string
+    - wai
+    - wai-app-static
+    - wai-logger
+    - warp
+    - wreq
+  when:
+    - condition: flag(localwww)
+      cpp-options: -DLOCALWWW
+
+executables:
+  moneydb-server:
+    main: Main.hs
+    source-dirs: server
+    dependencies:
+      - moneydb -any
+      - aeson
+      - boxes
+      - bytestring
+      - fast-logger
+      - monad-logger
+      - persistent
+      - text
+      - transformers
+      - unix
+      - unliftio-core
+      - warp
+  moneydb-client:
+    main: Main.hs
+    source-dirs: client
+    dependencies:
+      - moneydb -any
+      - aeson
+      - bytestring
+      - Decimal
+      - hostname
+      - http-client-tls
+      - http-client
+      - persistent
+      - servant-client
+      - servant
+      - time
+  moneydb-sandbox:
+    main: Main.hs
+    source-dirs: sandbox
+    dependencies:
+      - moneydb -any
+      - aeson
+      - bytestring
+      - criterion
+      - esqueleto
+      - fast-logger
+      - monad-logger
+      - text
+      - time
+      - unliftio-core

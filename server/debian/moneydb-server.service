@@ -1,0 +1,15 @@
+[Unit]
+Description=moneydb-server daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/moneydb-server -c /etc/moneydb/moneydb.cfg
+ExecReload=/bin/kill -INT $MAINPID
+StandardOutput=syslog
+StandardError=syslog
+Restart=always
+RestartSec=5s
+User=moneydb
+
+[Install]
+WantedBy=multi-user.target

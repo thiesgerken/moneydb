@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "373887208322",
+    "firebase_url": "https://moneydb-59585.firebaseio.com",
+    "project_id": "moneydb-59585",
+    "storage_bucket": "moneydb-59585.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373887208322:android:11a7ecbb8921945c",
+        "android_client_info": {
+          "package_name": "de.thiesgerken.moneydb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373887208322-e8pjukh36e3hrmafcoms2mo33rnt0d9q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.thiesgerken.moneydb",
+            "certificate_hash": "624725f7ccc7588a654d1b0feab5fb387cd23069"
+          }
+        },
+        {
+          "client_id": "373887208322-25g8q3h7aa6vdjhr9018l7qnt936iosb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD80AfNTIKeLf6NmY9oC29sIj0Wj9slJoE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373887208322-25g8q3h7aa6vdjhr9018l7qnt936iosb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

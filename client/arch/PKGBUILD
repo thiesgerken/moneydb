@@ -1,0 +1,16 @@
+# Maintainer: Thies Gerken <thies@thiesgerken.de>
+pkgname=moneydb-client
+pkgver=2.1.0
+pkgrel=1
+pkgdesc="built from git commit #COMMIT"
+arch=(x86_64)
+optdepends=('python-fints: fints-client.py support')
+url="https://git.thiesgerken.de/thies/moneydb.git"
+license=('BSD3')
+source=("moneydb-client")
+md5sums=(CHECKSUM)
+
+package() {
+  mkdir -p $pkgdir/usr/bin
+	cp moneydb-client $pkgdir/usr/bin
+}

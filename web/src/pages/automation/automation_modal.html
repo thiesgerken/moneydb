@@ -1,0 +1,59 @@
+<div class="ui modal" id="modal-automation">
+  <i class="close icon"></i>
+  <div class="header">
+    Neues Element
+  </div>
+  <div class="content">
+    <div class="ui form">
+      <div class="fields">
+        <div class="twelve wide field">
+          <label>Titel</label>
+          <input type="text" placeholder="Titel" id="title" />
+        </div>
+        <div class="four wide field">
+          <label>Priorität</label>
+          <input type="text" placeholder="Priorität" id="priority" />
+        </div>
+      </div>
+      <div class="fields">
+        <div class="ten wide field">
+          <label>ID der Vorlage</label>
+          <input type="text" placeholder="Vorlage" id="template" />
+        </div>
+        <div class="six wide field">
+          <label>Filter für Zeit</label>
+          <input type="text" placeholder="RegEx für Zeit" id="time-filter" />
+        </div>
+      </div>
+      <div class="fields">
+        <div class="ten wide field">
+          <label>Filter für Konto</label>
+          <div class="ui fluid selection dropdown">
+            <input id="account-filter" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Konto</div>
+            <div class="menu"></div>
+          </div>
+        </div>
+        <div class="six wide field">
+          <label>Filter für Betrag</label>
+          <div class="ui right labeled input">
+            <input id="amount-filter" placeholder="Betrag" type="text" />
+            <div class="ui basic label">
+              &euro;
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Filter für Transaktion</label>
+        <input type="text" placeholder="RegEx für Transaktion" id="transaction-filter" />
+      </div>
+      <div class="ui error message"></div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui cancel button">Abbrechen</div>
+    <div class="ui ok green button">Speichern</div>
+  </div>
+</div>

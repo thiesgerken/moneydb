@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MoneyDB</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+<string name="loadmore">Lade 10 weitere</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="title_activity_expense">ExpenseActivity</string>
+    <string name="av_immediately">Sofort</string>
+    <string name="av_weeks">Wochen</string>
+    <string name="av_months">Monate</string>
+    <string name="av_years">Jahre</string>
+    <string name="av_decades">Jahrzehnte</string>
+    <string name="last_refresh">letzte Aktualisierung: </string>
+    <string name="pref_url">URL</string>
+    <string name="pref_user">Benutzer</string>
+    <string name="pref_password">Passwort</string>
+    <string name="pref_database">Datenbank</string>
+    <string name="prefs">Einstellungen</string>
+</resources>

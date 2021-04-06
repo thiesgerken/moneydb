@@ -1,0 +1,9 @@
+/.stack-work
+/.tmp
+/.vscode
+/dist
+/money.sqlite3
+/money.sqlite3-shm
+/money.sqlite3-wal
+/moneydb.cfg
+/moneydb.cabal

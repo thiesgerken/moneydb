@@ -1,0 +1,8 @@
+Package: moneydb-server
+Version: 2.1-1
+Section: base
+Priority: optional
+Architecture: amd64
+Depends: libpq5, libmysqlclient21, libatomic1
+Maintainer: Thies Gerken <thies@thiesgerken.de>
+Description: MoneyDB

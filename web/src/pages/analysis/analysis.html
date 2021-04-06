@@ -1,0 +1,102 @@
+<div class="ui grid">
+  <div class="two wide column">
+    <div class="ui secondary vertical blue menu" id="menu">
+      <a class="item" data-tab="analysis/computed_balances"
+        ><i class="icon calculator"></i> Berechnete Kontostände</a
+      >
+      <a class="item" data-tab="analysis/prepayments"
+        ><i class="icon hourglass outline"></i> Vorauszahlungen</a
+      >
+      <div class="ui divider"></div>
+      <a class="item" data-tab="analysis/monthly_overviews"
+        ><i class="icon calendar alternate"></i> Monatliche Übersichten</a
+      >
+      <a class="item" data-tab="analysis/calendar"
+        ><i class="icon calendar alternate"></i> Kalenderanzeige</a
+      >
+      <a class="item" data-tab="analysis/history"
+        ><i class="icon chart line"></i> Verlauf</a
+      >
+      <a class="item" data-tab="analysis/categories"
+        ><i class="icon chart pie"></i> Kategoriestatistiken</a
+      >
+      <a class="item" data-tab="analysis/statements"
+        ><i class="icon list"></i> Kontoauszüge</a
+      >
+      <!-- <div class="ui divider"></div>
+      <a class="item" data-tab="analysis/stock_portfolio"
+        ><i class="icon list"></i> Portfolio</a
+      >
+      <a class="item" data-tab="analysis/stock_portfolio_historic"
+        ><i class="icon list"></i> Portfolio (historisch)</a
+      > -->
+    </div>
+  </div>
+  <div class="fourteen wide column">
+    <div class="ui tab" data-tab="analysis/computed_balances">
+      <div id="computed-balances">
+        <!-- ... -->
+      </div>
+    </div>
+    <div class="ui tab" data-tab="analysis/prepayments">
+      <div id="prepayments">
+        <!-- ... -->
+      </div>
+    </div>
+    <div class="ui tab" data-tab="analysis/history">
+      <div id="availability-chart">
+        <!-- ... -->
+      </div>
+    </div>
+    <div class="ui tab" data-tab="analysis/statements">
+      <div id="statements">
+        <!-- ... -->
+      </div>
+    </div>
+    <!-- <div class="ui tab" data-tab="analysis/stock_portfolio">
+      <div id="stock-portfolio">
+      </div>
+    </div>
+    <div class="ui tab" data-tab="analysis/stock_portfolio_historic">
+      <div id="stock-portfolio-historic">
+      </div>
+    </div> -->
+    <div class="ui tab" data-tab="analysis/calendar">
+      <div id="calendar">
+        <!-- ... -->
+      </div>
+    </div>
+    <div class="ui tab" data-tab="analysis/categories">
+      <h2 class="ui header">Monatlich</h2>
+      <div id="category-chart">
+        <!-- ... -->
+      </div>
+      <div class="ui divider"></div>
+      <h2 class="ui header">Insgesamt</h2>
+      <div class="ui grid">
+        <div class="row">
+          <div class="seven wide column" id="allincomebycat">
+            <!-- ... -->
+          </div>
+          <div class="seven wide column" id="allexpsbycat">
+            <!-- ... -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui tab" data-tab="analysis/monthly_overviews">
+      <div class="ui grid">
+        <div class="row">
+          <div class="sixteen wide column">
+            <table
+              id="table-overviews"
+              class="ui celled table mytable"
+              width="100%"
+              cellspacing="0"
+            ></table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

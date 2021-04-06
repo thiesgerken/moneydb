@@ -1,0 +1,55 @@
+<div class="ui modal" id="modal-balances">
+  <i class="close icon"></i>
+  <div class="header">
+    Neues Element
+  </div>
+  <div class="content">
+    <div class="ui form">
+      <div class="two fields">
+        <div class="field">
+          <label>Datum</label>
+          <div class="ui calendar" id="date">
+            <div class="ui input left icon">
+              <i class="calendar icon"></i>
+              <input type="text" placeholder="Datum" name="date" />
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Uhrzeit</label>
+          <div class="ui calendar" id="time">
+            <div class="ui input left icon">
+              <i class="time icon"></i>
+              <input type="text" placeholder="Uhrzeit" name="time" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="twelve wide field">
+          <label>Konto</label>
+          <div class="ui fluid selection dropdown">
+            <input id="account" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Konto</div>
+            <div class="menu"></div>
+          </div>
+        </div>
+        <div class="four wide field">
+          <label>Betrag</label>
+          <div class="ui right labeled input">
+            <input id="amount" placeholder="Betrag" type="text" />
+            <div class="ui basic label">
+              &euro;
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui error message"></div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui cancel button">Abbrechen</div>
+    <div class="ui ok green button">Speichern</div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="ui grid">
+  <div class="row" style="padding-bottom:0px">
+    <div class="twelve wide column">
+      <div class="ui form">
+        <div class="fields">
+          <div class="field">
+            <label>Monat</label>
+            <div class="ui calendar" id="date-month">
+              <div class="ui input left icon">
+                <i class="calendar icon"></i>
+                <input type="text" placeholder="Datum" name="date" />
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>&nbsp;</label>
+            <div class="ui buttons">
+              <button class="ui labeled icon button" id="button-prev">
+                <i class="left chevron icon"></i>
+                Vorheriger
+              </button>
+              <button class="ui right labeled icon button" id="button-next">
+                Nächster
+                <i class="right chevron icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="inline fields" id="date-type">
+          <label>Anzeige nach</label>
+          <div class="field">
+            <div class="ui radio checkbox" data-tooltip="Zeitpunkt des Geldflusses">
+              <input type="radio" name="date-type" id="type-value" checked="" tabindex="0" class="hidden" />
+              <label>Wertstellungsdatum</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox" data-tooltip="Zeitpunkt des Einkaufs bzw. der erstmaligen Vormerkung">
+              <input type="radio" name="date-type" id="type-booking" tabindex="0" class="hidden" />
+              <label>Buchungsdatum</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve wide column">
+      <div class="ui seven column grid" id="grid-month">
+      </div>
+    </div>
+  </div>
+</div>

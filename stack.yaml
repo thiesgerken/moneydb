@@ -1,0 +1,11 @@
+snapshot: lts-16.31
+
+ghc-options:
+  "$everything": -split-sections -O2
+
+packages:
+  - "."
+
+allow-newer: true
+
+extra-deps: [pwstore-fast-2.4.4]

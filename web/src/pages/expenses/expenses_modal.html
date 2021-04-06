@@ -1,0 +1,211 @@
+<div class="ui modal" id="modal-expenses">
+  <i class="close icon"></i>
+  <div class="header">
+    Neues Element
+  </div>
+  <div class="content">
+    <div class="ui form">
+      <div class="fields">
+        <div class="twelve wide field">
+          <label>Titel</label>
+          <input type="text" placeholder="Titel" id="title" />
+        </div>
+        <div class="four wide field">
+          <label>Betrag</label>
+          <div class="ui right labeled input">
+            <input id="amount" placeholder="Betrag" type="text" />
+            <div class="ui basic label">
+              &euro;
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="four wide field">
+          <label>Wertstellungsdatum</label>
+          <div class="ui calendar" id="date">
+            <div class="ui input left icon">
+              <i class="calendar icon"></i>
+              <input type="text" placeholder="Datum" name="date" />
+            </div>
+          </div>
+        </div>
+        <div class="four wide field">
+          <label>&nbsp;</label>
+          <div class="ui calendar" id="time">
+            <div class="ui input left icon">
+              <i class="time icon"></i>
+              <input type="text" placeholder="Uhrzeit" name="time" />
+            </div>
+          </div>
+        </div>
+        <div class="four wide field">
+          <label>
+            <!-- <div class="ui checkbox"> -->
+            <input id="booking" type="checkbox" />
+            <label>Buchungsdatum</label>
+            <!-- </div> -->
+          </label>
+          <div class="ui calendar" id="booking-date">
+            <div class="ui input left icon">
+              <i class="calendar icon"></i>
+              <input type="text" placeholder="Datum" name="booking-date" />
+            </div>
+          </div>
+        </div>
+        <div class="four wide field">
+          <label>&nbsp;</label>
+          <div class="ui calendar" id="booking-time">
+            <div class="ui input left icon">
+              <i class="time icon"></i>
+              <input type="text" placeholder="Uhrzeit" name="booking-time" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="four wide field">
+          <label>Kategorie</label>
+          <div class="ui fluid selection dropdown">
+            <input id="category" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Kategorie</div>
+            <div class="menu"></div>
+          </div>
+        </div>
+        <div class="four wide field">
+          <label>Konto</label>
+          <div class="ui fluid selection dropdown">
+            <input id="account" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Konto</div>
+            <div class="menu"></div>
+          </div>
+        </div>
+        <div class="eight wide field">
+          <label>Markierungen</label>
+          <div class="ui fluid selection dropdown multiple">
+            <input id="flags" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Markierungen</div>
+            <div class="menu">
+              <div class="item" data-value="NeedsAttention">Überprüfen</div>
+              <div class="item" data-value="TaxRelevant">Steuererklärung</div>
+              <div class="item" data-value="Compensated">Ausgeglichen</div>
+              <div class="item" data-value="Template">Vorlage</div>
+              <div class="item" data-value="Preliminary">Vorläufig</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="field three wide">
+          <label>Typ</label>
+          <div class="ui fluid selection dropdown">
+            <input id="type" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Typ</div>
+            <div class="menu">
+              <div class="item" data-value="normal">Normal</div>
+              <div class="item" data-value="movement">Kontobewegung</div>
+              <div class="item" data-value="sharedequal">Gemeinsam (50%)</div>
+              <div class="item" data-value="sharedcustom">Gemeinsam</div>
+            </div>
+          </div>
+        </div>
+        <div class="field five wide">
+          <label>&nbsp;</label>
+          <div class="ui fluid selection dropdown">
+            <input name="sndaccount" id="sndaccount" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Konto</div>
+            <div class="menu"></div>
+          </div>
+        </div>
+        <div class="field five wide">
+          <label>&nbsp;</label>
+          <button class="ui button" style="width:100%" id="configure">Konfigurieren</button>
+        </div>
+        <div class="field eight wide">
+          <label>Gesch&auml;ft</label>
+          <input type="text" placeholder="Gesch&auml;ft" id="store" />
+        </div>
+      </div>
+      <div class="field">
+        <label>Beschreibung</label>
+        <input type="text" placeholder="Beschreibung" id="description" />
+      </div>
+      <div class="field">
+        <label>Transaktion</label>
+        <textarea rows="2" placeholder="Transaktion" id="transaction" style="font-family:monospace"></textarea>
+      </div>
+      <div class="field">
+        <label>Kommentare</label>
+        <textarea id="comments" placeholder="Kommentare" rows="2"></textarea>
+      </div>
+      <div class="ui error message"></div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui cancel button">Abbrechen</div>
+    <div class="ui ok green button">Speichern</div>
+  </div>
+</div>
+
+<div class="ui modal" id="modal-expenses-sharing">
+  <i class="close icon"></i>
+  <div class="header">
+    Optionen f&uuml;r gemeinsame Ausgaben
+  </div>
+  <div class="content">
+    <div class="ui form">
+      <div class="fields">
+        <div class="eight wide field">
+          <label>Konto</label>
+          <div class="ui fluid selection dropdown">
+            <input id="sharing-account" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Konto</div>
+            <div class="menu"></div>
+          </div>
+        </div>
+        <div class="four wide field">
+          <label>Anteil</label>
+          <div class="ui fluid selection dropdown">
+            <input id="sharing-type" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Anteil</div>
+            <div class="menu">
+              <div class="item" data-value="equal">Anteilig</div>
+              <div class="item" data-value="customamount">fester Betrag</div>
+              <div class="item" data-value="custompercentage">fester Prozentsatz</div>
+            </div>
+          </div>
+        </div>
+        <div class="three wide field">
+          <label>&nbsp;</label>
+          <div class="ui right labeled input">
+            <input id="sharing-fixed" placeholder="" type="text" />
+            <div class="ui basic label">
+              &euro;
+            </div>
+          </div>
+        </div>
+        <div class="one wide field">
+          <label>&nbsp;</label>
+          <button id="add" class="ui icon button teal">
+            <i class="icon add"></i>
+          </button>
+          <button id="remove" class="ui icon button red" style="display:none">
+            <i class="icon minus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="ui error message"></div>
+    </div>
+  </div>
+  <div class="actions">
+    <!-- <div class="ui cancel button">Abbrechen</div> -->
+    <div class="ui ok teal button">Schließen</div>
+  </div>
+</div>

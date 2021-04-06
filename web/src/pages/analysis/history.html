@@ -1,0 +1,114 @@
+<div id="chart" style="margin-bottom:20px"></div>
+<div class="ui form">
+  <div class="inline fields">
+  </div>
+  <div class="inline fields" id="group-by">
+    <label>Art:</label>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="group_by" type="radio" id="group-by-availability" />
+        <label>nach Verfügbarkeit</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="group_by" type="radio" id="group-by-account" />
+        <label>nach Konto</label>
+      </div>
+    </div>
+    <div class="field">
+      <button class="ui button" id="show-all">Alles einblenden</button>
+    </div>
+    <div class="field">
+      <button class="ui button" id="hide-all">Alles ausblenden</button>
+    </div>
+  </div>
+  <div class="inline fields" id="display-type">
+    <label>Art:</label>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="display_type" type="radio" id="absolute" />
+        <label>Absolute Werte</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="display_type" type="radio" id="diff" />
+        <label>Differenzen</label>
+      </div>
+    </div>
+  </div>
+  <div class="inline fields" id="interval">
+    <label>Abstand zwischen Datenpunkten:</label>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="interval" type="radio" id="interval-daily" />
+        <label>ein Tag</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="interval" type="radio" id="interval-biweekly" />
+        <label>halbe Woche</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="interval" type="radio" id="interval-weekly" />
+        <label>eine Woche</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="interval" type="radio" id="interval-twoweekly" />
+        <label>Zwei Wochen</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="interval" type="radio" id="interval-monthly" />
+        <label>ein Monat</label>
+      </div>
+    </div>
+  </div>
+  <div class="inline fields" id="range">
+    <label>Datenbereich:</label>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="range" type="radio" id="range-firstbalance" />
+        <label>seit erstem Kontostand</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="range" type="radio" id="range-firstexpense" />
+        <label>seit erster Ausgabe</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input name="range" type="radio" id="range-custom" />
+        <label>von</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui calendar" id="range-from">
+        <div class="ui input left icon">
+          <i class="calendar icon"></i>
+          <input type="text" placeholder="Datum" />
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label style="font-weight:100">bis</label>
+    </div>
+    <div class="field">
+      <div class="ui calendar" id="range-to">
+        <div class="ui input left icon">
+          <i class="calendar icon"></i>
+          <input type="text" placeholder="Datum" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

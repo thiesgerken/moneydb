@@ -1,0 +1,103 @@
+<div class="ui modal" id="modal-stock-transactions">
+  <i class="close icon"></i>
+  <div class="header">
+    Neues Element
+  </div>
+  <div class="content">
+    <div class="ui form">
+      <div class="fields">
+        <div class="ten wide field">
+          <label>Wertpapier</label>
+          <div class="ui fluid selection dropdown">
+            <input id="stock" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Wertpapier</div>
+            <div class="menu"></div>
+          </div>
+        </div>
+        <div class="six wide field">
+          <label>Depot</label>
+          <div class="ui fluid selection dropdown">
+            <input id="account" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Depot</div>
+            <div class="menu"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="four wide field">
+          <label>Datum</label>
+          <div class="ui calendar" id="date">
+            <div class="ui input left icon">
+              <i class="calendar icon"></i>
+              <input type="text" placeholder="Datum" name="date" />
+            </div>
+          </div>
+        </div>
+        <div class="four wide field">
+          <label>&nbsp;</label>
+          <div class="ui calendar" id="time">
+            <div class="ui input left icon">
+              <i class="time icon"></i>
+              <input type="text" placeholder="Uhrzeit" name="time" />
+            </div>
+          </div>
+        </div>
+        <div class="eight wide field">
+          <label>Handelsplatz</label>
+          <input type="text" placeholder="Handelsplatz" id="exchange" />
+        </div>
+      </div>
+      <div class="fields">
+        <div class="four wide field">
+          <label>Einheiten</label>
+          <div class="ui right input">
+            <input id="units" placeholder="Einheiten" type="text" />
+          </div>
+        </div>
+        <div class="four wide field">
+          <label>Betrag</label>
+          <div class="ui right labeled input">
+            <input id="amount" placeholder="Betrag" type="text" />
+            <div class="ui basic label">
+              &euro;
+            </div>
+          </div>
+        </div>
+        <div class="two wide field">
+          <label>Gebühren</label>
+          <div class="ui right labeled input">
+            <input id="fees" placeholder="" type="text" />
+            <div class="ui basic label">
+              &euro;
+            </div>
+          </div>
+        </div>
+        <div class="three wide field">
+          <label>Kurs</label>
+          <div class="ui right labeled input">
+            <input id="price" placeholder="Kurs" type="text" readonly="" />
+            <div class="ui basic label">
+              &euro;
+            </div>
+          </div>
+        </div>
+        <div class="three wide field">
+          <label>Gesamtbetrag</label>
+          <div class="ui right labeled input">
+            <input id="total-amount" placeholder="Gesamtbetrag" type="text" readonly="" />
+            <div class="ui basic label">
+              &euro;
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui error message"></div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui cancel button">Abbrechen</div>
+    <div class="ui ok green button">Speichern</div>
+  </div>
+</div>

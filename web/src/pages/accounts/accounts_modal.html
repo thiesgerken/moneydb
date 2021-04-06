@@ -1,0 +1,108 @@
+<div class="ui modal" id="modal-accounts">
+  <i class="close icon"></i>
+  <div class="header">
+    Neues Element
+  </div>
+  <div class="content">
+    <div class="ui form">
+      <div class="fields">
+        <div class="field twelve wide">
+          <label>Titel</label>
+          <input type="text" placeholder="Titel" id="modal-accounts-title" />
+        </div>
+        <div class="field six wide">
+          <label>IBAN</label>
+          <input type="text" placeholder="IBAN" id="modal-accounts-iban" />
+        </div>
+      </div>
+      <div class="fields">
+        <div class="field five wide">
+          <label>Art</label>
+          <div class="ui fluid selection dropdown">
+            <input id="modal-accounts-kind" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Typ</div>
+            <div class="menu">
+              <div class="item" data-value="Cash">Bargeld</div>
+              <div class="item" data-value="Credit">Kreditkonto</div>
+              <div class="item" data-value="Debit">Girokonto</div>
+              <div class="item" data-value="Debt">Schulden</div>
+              <div class="item" data-value="Virtual">Virtuell</div>
+              <div class="item" data-value="Investment">Investition</div>
+              <div class="item" data-value="Prepayment">Vorauszahlung</div>
+            </div>
+          </div>
+        </div>
+        <div class="field five wide">
+          <label>Verfügbarkeit</label>
+          <div class="ui fluid selection dropdown">
+            <input id="modal-accounts-availability" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Verfügbarkeit</div>
+            <div class="menu">
+              <div class="item" data-value="Immediately">Sofort</div>
+              <div class="item" data-value="Weeks">Wochen</div>
+              <div class="item" data-value="Months">Monate</div>
+              <div class="item" data-value="Years">Jahre</div>
+              <div class="item" data-value="Decades">Jahrzehnte</div>
+            </div>
+          </div>
+        </div>
+        <div class="field six wide">
+          <label>Farbe</label>
+          <div class="ui action input">
+            <input type="text" placeholder="Farbe" id="modal-accounts-color" />
+            <button class="ui button color-saturation-plus"><i class="plus icon"></i></button>
+            <button class="ui button color-saturation-minus"><i class="minus icon"></i></button>
+            <button class="ui button color-random"><i class="random icon"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="field six wide">
+          <label>Typ</label>
+          <div class="ui fluid selection dropdown disabled">
+            <input id="modal-accounts-type" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Typ</div>
+            <div class="menu">
+              <div class="item" data-value="Normal">Normal</div>
+              <div class="item" data-value="Shared">Synchronisiert</div>
+            </div>
+          </div>
+        </div>
+        <div class="field six wide">
+          <label>&nbsp;</label>
+          <div class="ui fluid selection dropdown disabled">
+            <input name="sndaccount" id="modal-accounts-sndaccount" type="hidden" />
+            <i class="dropdown icon"></i>
+            <div class="default text">Konto</div>
+            <div class="menu"></div>
+          </div>
+        </div>
+        <div class="four wide field">
+          <label>Faktor</label>
+          <div class="ui right input disabled">
+            <input id="modal-accounts-factor" placeholder="Faktor" type="text" />
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Beschreibung</label>
+        <input type="text" placeholder="Beschreibung" id="modal-accounts-description" />
+      </div>
+      <div class="field">
+        <!-- <label>&nbsp;</label> -->
+        <div class="ui checkbox">
+          <input type="checkbox" id="modal-accounts-hidden" />
+          <label for="modal-accounts-hidden">Versteckt</label>
+        </div>
+      </div>
+      <div class="ui error message"></div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui cancel button">Abbrechen</div>
+    <div class="ui ok green button">Speichern</div>
+  </div>
+</div>

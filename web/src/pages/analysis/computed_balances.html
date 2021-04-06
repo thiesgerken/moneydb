@@ -1,0 +1,49 @@
+<div class="ui grid">
+  <div class="row" style="padding-bottom:0px">
+    <div class="three wide column">
+      <div class="ui form">
+        <div class="field">
+          <label>Kontostände am</label>
+          <div class="ui calendar" id="date">
+            <div class="ui input left icon">
+              <i class="calendar icon"></i>
+              <input type="text" placeholder="Datum" name="date" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="eight wide column">
+      <table id="table-balances" class="ui celled table">
+        <thead>
+          <tr>
+            <th>Konto</th>
+            <th>Betrag</th>
+            <th>Datenquelle</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+    </div>
+    <div class="eight wide column">
+      <table id="table-availabilities" class="ui celled table">
+        <thead>
+          <tr>
+            <th>Verfügbarkeit</th>
+            <th>Betrag</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div id="sunburst">
+        <!-- ... -->
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/dividertitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="31.10.2016"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle=""
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+
+</LinearLayout>
